@@ -1,5 +1,45 @@
+import java.util.Scanner;
+
 public class Main {
   public static void main(String[] args) {
-    System.out.println("hi");
+
+    Scanner scnr = new Scanner(System.in);
+    double totalPrice = 0.0;
+    int numOf1 = 0;
+    int numOf2 = 0;
+    int numOf3 = 0;
+
+    System.out.println("Please choose a product. (input -1 to stop)");
+    System.out.println("1. Bathwater $4.99");
+    System.out.println("2. Airpods $249.99");
+    System.out.println("3. Minecraft: Java Edition $29.99");
+
+    int userInput = scnr.nextInt();
+
+    while (userInput != -1) {
+
+        if (userInput == 1) {
+          totalPrice += 4.99;
+          numOf1++;
+          //System.out.println("1");
+        } else if (userInput == 2) {
+          totalPrice += 249.99;
+          numOf2++;
+          //System.out.println("2");
+        } else if (userInput == 3) {
+          totalPrice += 29.99;
+          numOf3++;
+          //System.out.println("3");
+        } else {
+          System.out.println("Please input 1, 2, or 3");
+        }
+
+        userInput = scnr.nextInt();
+
+    }
+    System.out.println("Cart:\n" + numOf1 + "x Bathwater\n" + numOf2 + "x Airpods\n" + numOf3 + "x Minecraft: Java Edition");
+    System.out.println("Do you have a coupon code?(Y/N)");
+
+    System.out.print("Total: $" + totalPrice + "\uD83D\uDE33");
   }
 }
