@@ -37,7 +37,16 @@ public class Main {
         userInput = scnr.nextInt();
 
     }
-    System.out.println("Cart:\n" + numOf1 + "x Bathwater\n" + numOf2 + "x Airpods\n" + numOf3 + "x Minecraft: Java Edition");
+    System.out.println("Cart:");
+    if (numOf1 > 0)
+        System.out.println(numOf1 + "x Bathwater");
+    if (numOf2 > 0)
+        System.out.println(numOf2 + "x Airpods");
+    if (numOf3 > 0)
+        System.out.println(numOf3 + "x Minecraft: Java Edition");
+    if (numOf1 == 0 && numOf2 == 0 && numOf3 == 0)
+        System.out.println("Empty");
+
     System.out.println("Do you have a coupon code?(Y/N)");
 
     System.out.print("Total: $" + totalPrice + "\uD83D\uDE33");
