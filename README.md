@@ -24,4 +24,4 @@ The online storefront simulates shopping experiences such as product browsing, c
 - [Austin Maranan](https://github.com/maranan8)
 - [Jacob Ladd](https://github.com/jladd505)
 - [Johnny Brunton](https://github.com/JohnnyBrunton1)
-- [Bryan Dinh]()
+- [Bryan Dinh](https://github.com/bhdinhcpp)
