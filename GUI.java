@@ -83,7 +83,7 @@ public class GUI {
                 JLabel apLabel = new JLabel(numOfAP + "x Airpods");
                 JLabel mcLabel = new JLabel(numOfMC + "x Minecraft: Java Edition");
                 JLabel empty = new JLabel("Cart is Empty");
-                JLabel total = new JLabel("Total: $" + ((numOfBW * 5) + (numOfAP * 250) + (numOfMC * 30) - discount) + youSaved);
+                JLabel total = new JLabel("Total: $" + ((numOfBW * 5) + (numOfAP * 250) + (numOfMC * 30) - discount) + youSaved + "\uD83D\uDE33");
 
                 if (numOfBW > 0)
                     panel.add(bwLabel);
